@@ -18,14 +18,14 @@ module Rubypress
       default_options = {
         category: {}
       }.deep_merge!(options)
-      execute('suggestCategories', default_options)
+      execute('newCategory', default_options)
     end
 
     def deleteCategory(options = {})
       default_options = {
         category_id: nil
       }.deep_merge!(options)
-      execute('suggestCategories', default_options)
+      execute('deleteCategory', default_options)
     end
 
   end
