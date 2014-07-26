@@ -2,6 +2,7 @@ require 'yaml'
 require 'erb'
 require 'retryable'
 
+require_relative 'categories'
 require_relative 'posts'
 require_relative 'taxonomies'
 require_relative 'media'
@@ -70,6 +71,7 @@ module Rubypress
     include Comments
     include Options
     include Users
+    include Categories
 
   end
 
