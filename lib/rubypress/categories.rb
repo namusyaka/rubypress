@@ -3,7 +3,7 @@ module Rubypress
   module Categories
 
     def getCategories(options = {})
-      execute('getCategories', default_options)
+      execute('getCategories', options)
     end
 
     def suggestCategories(options = {})
